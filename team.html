@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sushi Bell — Meet the Team</title>
+  <link rel="stylesheet" href="CSS/team.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="logo"><h2>Sushi Bell</h2></div>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+
+        <li class="dropdown">
+          <a href="about.html">About</a>
+          <ul class="dropdown-menu">
+            <li><a href="history.html">Our History</a></li>
+            <li><a href="team.html">The Team</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+          </ul>
+        </li>
+
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li><a href="loyalty.html">Loyalty</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="careers.html" class="order-btn">Join Us</a></li>
+      </ul>
+
+      <div class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Secondary header (same as index) -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <img src="imgs/sushi-bell-logo-print-1.jpeg" alt="sushi bell logo">
+          <div class="logo-text">
+            <h2>Meet the Team</h2>
+<p>The masters behind every roll, dish, and experience</p>
+
+          </div>
+        </div>
+
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Baakline - Hamra - Aley</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+961 71 489 924</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Team Philosophy -->
+  <section class="team-philosophy section">
+    <div class="container">
+      <h2>Our Team Philosophy</h2>
+      <p class="lead">At Sushi Bell, craftsmanship, respect for ingredients and teamwork are the foundation of every plate. We combine Japanese technique with Lebanese warmth — one roll at a time.</p>
+    </div>
+  </section>
+
+  <!-- Filters -->
+  <section class="team-filter section">
+    <div class="container">
+      <div class="filter-row">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="kitchen">Kitchen</button>
+        <button class="filter-btn" data-filter="management">Management</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+        <button class="filter-btn" data-filter="front">Front of House</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Grid -->
+  <section class="team-grid section">
+    <div class="container grid">
+      <!-- Team member card (repeat as needed) -->
+      <article class="team-card fade-in" data-category="kitchen" data-member="chef-rolly">
+        <div class="team-media">
+          <img src="images/Chef Rolly.jpeg" alt="Chef Rolly">
+        </div>
+        <div class="team-body">
+          <h3>Chef Rolly</h3>
+          <p class="role">Head Sushi Chef</p>
+
+          <!-- micro animation skill badges -->
+          <div class="badges">
+            <span class="badge">20 yrs experience</span>
+            <span class="badge">Sashimi Specialist</span>
+          </div>
+
+          <div class="team-actions">
+            <button class="btn btn-small bio-open" data-member="akira">View Bio</button>
+            <button class="btn btn-small" data-open-skill="akira">Skills</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="team-card fade-in" data-category="management" data-member="mohammed">
+        <div class="team-media">
+          <img src="images/chef3.jpg" alt="Mohammed Khalil">
+        </div>
+        <div class="team-body">
+          <h3>Mohammed Khalil</h3>
+          <p class="role">General Manager</p>
+          <div class="badges">
+            <span class="badge">12 yrs leadership</span>
+            <span class="badge">Operations</span>
+          </div>
+
+          <div class="team-actions">
+            <button class="btn btn-small bio-open" data-member="mohammed">View Bio</button>
+            <button class="btn btn-small" data-open-skill="mohammed">Skills</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="team-card fade-in" data-category="design" data-member="leila">
+        <div class="team-media">
+          <img src="images/chef2.jpg" alt="Leila Haddad">
+        </div>
+        <div class="team-body">
+          <h3>Leila Haddad</h3>
+          <p class="role">Pastry Chef</p>
+          <div class="badges">
+            <span class="badge">Dessert Creator</span>
+            <span class="badge">Fusion</span>
+          </div>
+
+          <div class="team-actions">
+            <button class="btn btn-small bio-open" data-member="leila">View Bio</button>
+            <button class="btn btn-small" data-open-skill="leila">Skills</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="team-card fade-in" data-category="front" data-member="sara">
+        <div class="team-media">
+          <img src="images/chef4.jpg" alt="Sara Nassar">
+        </div>
+        <div class="team-body">
+          <h3>Sara Nassar</h3>
+          <p class="role">Front of House</p>
+          <div class="badges">
+            <span class="badge">Guest Relations</span>
+            <span class="badge">Events</span>
+          </div>
+
+          <div class="team-actions">
+            <button class="btn btn-small bio-open" data-member="sara">View Bio</button>
+            <button class="btn btn-small" data-open-skill="sara">Skills</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Skill Bars panel (hidden, opens per member or visible summary) -->
+  <section class="skills-summary section" aria-hidden="false">
+    <div class="container">
+      <h2>Team Skills Overview</h2>
+
+      <div class="skill-row">
+        <div class="skill">
+          <div class="skill-title">Creativity</div>
+          <div class="skill-bar"><div class="skill-fill" data-fill="88%"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-title">Precision & Craft</div>
+          <div class="skill-bar"><div class="skill-fill" data-fill="96%"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-title">Team Coordination</div>
+          <div class="skill-bar"><div class="skill-fill" data-fill="90%"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-title">Customer Experience</div>
+          <div class="skill-bar"><div class="skill-fill" data-fill="92%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Letter from Head Chef -->
+  <section class="chef-letter section">
+    <div class="container">
+      <div class="letter-wrap">
+        <h2>Letter from the Head Chef</h2>
+        <p class="quote">“At Sushi Bell we treat ingredients with the utmost respect. Our goal is to translate simple, seasonal produce into a memorable experience.”</p>
+        <p class="chef-sign">— Chef Rolly</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Join Our Team CTA -->
+  <section class="join-cta section">
+    <div class="container cta-box">
+      <div>
+        <h2>Love food? Join our team.</h2>
+        <p>We’re hiring cooks, servers, and delivery partners. Grow with us.</p>
+      </div>
+      <div>
+        <a href="careers.html" class="btn">Explore Careers</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bio Modal (re-used for all members) -->
+  <div class="bio-modal" aria-hidden="true">
+    <div class="bio-panel">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <div class="bio-inner">
+        <img src="" alt="" class="bio-photo">
+        <h3 class="bio-name"></h3>
+        <p class="bio-role"></p>
+        <p class="bio-text"></p>
+        <div class="bio-skills"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer (same markup as index) -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <div class="footer-logo">
+            <div class="logo-image">
+              <img src="imgs/sushi-bell-logo-print-1.jpeg" alt="Sushi Bell Logo">
+            </div>
+            <div class="footer-logo-text">
+              <h3>Sushi Bell</h3>
+              <p>A world class taste in a high end place</p>
+            </div>
+          </div>
+
+          <div class="contact-details">
+            <p><i class="fas fa-map-marker-alt"></i> Baakline</p>
+            <p><i class="fas fa-phone"></i> +961 71 489 924</p>
+          </div>
+
+          <div class="social-icons">
+            <a href="https://www.instagram.com/sushi_bell/?hl=en" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/sushi.bell.lb/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.tiktok.com/@sushi_bell_lb" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-copyright">
+          <p>&copy; 2025 Sushi Bell. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="JS/team.js"></script>
+</body>
+</html>

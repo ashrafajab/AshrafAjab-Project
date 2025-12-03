@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushi Bell - Join Our Team</title>
+    <link rel="stylesheet" href="CSS/careers.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <header class="site-header">
+    <nav class="navbar">
+      <div class="logo"><h2>Sushi Bell</h2></div>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="about.html">About</a>
+          <ul class="dropdown-menu">
+            <li><a href="history.html">Our History</a></li>
+            <li><a href="team.html">The Team</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+          </ul>
+        </li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li><a href="loyalty.html">Loyalty</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="careers.html" class="order-btn">Join Us</a></li>
+      </ul>
+
+      <div class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <img src="imgs/sushi-bell-logo-print-1.jpeg" alt="sushi bell logo">
+          <div class="logo-text">
+            <h2>Join The Team</h2>
+            <p>Grow your talent and build your future with Sushi Bell</p>
+          </div>
+        </div>
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Baakline - Hamra - Aley</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+961 71 489 924</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+    <main class="careers-page">
+
+        <!-- Hero Section -->
+        <section class="careers-hero">
+            <div class="container hero-content">
+                <h1>Join Our Sushi Bell Family</h1>
+                <p>We're looking for talented, passionate individuals to help us deliver an unforgettable sushi experience. Take your career to the next level with us!</p>
+                <a href="#careersForm" class="btn btn-primary">Apply Now</a>
+            </div>
+        </section>
+
+        <!-- Interactive Application Tracker -->
+        <section class="application-tracker">
+            <div class="container">
+                <h2>Your Application Journey</h2>
+                <div class="tracker-steps">
+                    <div class="tracker-step active" data-step="1">
+                        <div class="step-number">1</div>
+                        <h3>Submit Application</h3>
+                        <p>Fill out our quick application form</p>
+                    </div>
+                    <div class="tracker-step" data-step="2">
+                        <div class="step-number">2</div>
+                        <h3>Review Process</h3>
+                        <p>Our team reviews your application</p>
+                    </div>
+                    <div class="tracker-step" data-step="3">
+                        <div class="step-number">3</div>
+                        <h3>Interview</h3>
+                        <p>Get to know our team</p>
+                    </div>
+                    <div class="tracker-step" data-step="4">
+                        <div class="step-number">4</div>
+                        <h3>Welcome Aboard!</h3>
+                        <p>Start your Sushi Bell journey</p>
+                    </div>
+                </div>
+                <div class="tracker-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="trackerProgress" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Open Positions Section -->
+        <section class="careers-open-positions">
+            <div class="container">
+                <h2>Current Openings</h2>
+                <div class="positions-grid">
+                    <div class="position-card" data-position="Waiter">
+                        <div class="icon"><i class="fas fa-utensils"></i></div>
+                        <h3>Waiter / Waitress</h3>
+                        <p>Engage with customers and provide top-tier service in a fast-paced environment.</p>
+                        <div class="position-details">
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Full-time</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>All Branches</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-star"></i>
+                                <span>Training Provided</span>
+                            </div>
+                        </div>
+                        <button class="apply-position-btn" data-position="Waiter">Quick Apply</button>
+                    </div>
+                    <div class="position-card" data-position="Sushi Assistant">
+                        <div class="icon"><i class="fa-solid fa-fish"></i></div>
+                        <h3>Sushi Chef Assistant</h3>
+                        <p>Learn from our master chefs and create sushi that delights the senses.</p>
+                        <div class="position-details">
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Full-time</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Baakline & Hamra</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Learn from Experts</span>
+                            </div>
+                        </div>
+                        <button class="apply-position-btn" data-position="Sushi Assistant">Quick Apply</button>
+                    </div>
+                    <div class="position-card" data-position="Cashier">
+                        <div class="icon"><i class="fas fa-cash-register"></i></div>
+                        <h3>Cashier</h3>
+                        <p>Handle orders and payments efficiently while providing excellent customer service.</p>
+                        <div class="position-details">
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Part-time/Full-time</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>All Branches</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Growth Opportunities</span>
+                            </div>
+                        </div>
+                        <button class="apply-position-btn" data-position="Cashier">Quick Apply</button>
+                    </div>
+                    <div class="position-card" data-position="Driver">
+                        <div class="icon"><i class="fas fa-motorcycle"></i></div>
+                        <h3>Delivery Driver</h3>
+                        <p>Deliver our sushi safely and on time while ensuring customer satisfaction.</p>
+                        <div class="position-details">
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Flexible Hours</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>All Branches</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-gas-pump"></i>
+                                <span>Fuel Allowance</span>
+                            </div>
+                        </div>
+                        <button class="apply-position-btn" data-position="Driver">Quick Apply</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Employee Benefits Section -->
+        <section class="employee-benefits">
+            <div class="container">
+                <h2>Why Work With Us</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i class="fas fa-money-bill-wave"></i></div>
+                        <h3>Competitive Pay</h3>
+                        <p>We offer above-market wages with regular performance reviews and raises.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i class="fas fa-heart"></i></div>
+                        <h3>Health Benefits</h3>
+                        <p>Comprehensive health insurance for all full-time employees after probation.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <h3>Training & Growth</h3>
+                        <p>Continuous learning opportunities and clear career progression paths.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i class="fas fa-utensils"></i></div>
+                        <h3>Free Meals</h3>
+                        <p>Enjoy complimentary meals during your shifts and employee discounts.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i class="fas fa-calendar-alt"></i></div>
+                        <h3>Flexible Scheduling</h3>
+                        <p>Work-life balance with flexible hours and paid time off.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i class="fas fa-users"></i></div>
+                        <h3>Team Environment</h3>
+                        <p>Join a supportive family-like team that values each member's contribution.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Apply Form Section -->
+        <section class="careers-apply" id="careersForm">
+            <div class="container">
+                <h2>Submit Your Application</h2>
+                <p class="apply-subtitle">Fill out the form below and take the first step toward your new career</p>
+                
+                <form id="careersForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="applyName"><i class="fas fa-user"></i> Full Name</label>
+                            <input type="text" id="applyName" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="applyPhone"><i class="fas fa-phone"></i> Phone Number</label>
+                            <input type="tel" id="applyPhone" placeholder="Enter your phone number" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="applyEmail"><i class="fas fa-envelope"></i> Email Address</label>
+                            <input type="email" id="applyEmail" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="applyPosition"><i class="fas fa-briefcase"></i> Position Applied For</label>
+                            <select id="applyPosition" required>
+                                <option value="">Select Position</option>
+                                <option value="Waiter">Waiter / Waitress</option>
+                                <option value="Sushi Assistant">Sushi Chef Assistant</option>
+                                <option value="Cashier">Cashier</option>
+                                <option value="Driver">Delivery Driver</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="applyBranch"><i class="fas fa-store"></i> Preferred Branch</label>
+                            <select id="applyBranch" required>
+                                <option value="">Select Branch</option>
+                                <option value="baakline">Baakline</option>
+                                <option value="beirut">Hamra</option>
+                                <option value="aley">Aley</option>
+                                <option value="any">Any Branch</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="applyExperience"><i class="fas fa-chart-line"></i> Experience Level</label>
+                            <select id="applyExperience" required>
+                                <option value="">Select Experience</option>
+                                <option value="none">No Experience</option>
+                                <option value="junior">Junior (1-2 years)</option>
+                                <option value="experienced">Experienced (3-5 years)</option>
+                                <option value="expert">Expert (5+ years)</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="applyNotes"><i class="fas fa-comment"></i> Tell us about yourself</label>
+                        <textarea id="applyNotes" rows="4" placeholder="Why are you interested in joining Sushi Bell? What skills and experience can you bring?"></textarea>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="applyCV"><i class="fas fa-file-upload"></i> Upload Resume (Optional)</label>
+                        <div class="file-upload">
+                            <input type="file" id="applyCV" accept=".pdf,.doc,.docx">
+                            <div class="file-info" id="fileInfo">No file chosen</div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-submit">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Submit Application
+                        </button>
+                        <div class="application-counter">
+                            <i class="fas fa-users"></i>
+                            <span><strong id="applicantCount">24</strong> people applied today</span>
+                        </div>
+                    </div>
+                    <p class="form-message" id="careersMessage"></p>
+                </form>
+            </div>
+        </section>
+
+        <!-- Application Success Overlay (Hidden) -->
+        <div class="application-success" id="successOverlay">
+            <div class="success-content">
+                <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+                <h3>Application Submitted!</h3>
+                <p>Thank you for applying to join the Sushi Bell family. We'll review your application and contact you soon.</p>
+                <div class="success-details">
+                    <p><i class="fas fa-clock"></i> Expected response: 3-5 business days</p>
+                    <p><i class="fas fa-phone"></i> We'll contact you at: <span id="applicantPhone"></span></p>
+                </div>
+                <button class="btn" id="closeSuccess">Return to Careers</button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <div class="logo-image">
+                            <img src="imgs/sushi-bell-logo-print-1.jpeg" alt="Sushi Bell Logo">
+                        </div>
+                        <div class="footer-logo-text">
+                            <h3>Sushi Bell</h3>
+                            <p>A world class taste in a high end place</p>
+                        </div>
+                    </div>
+                    <div class="contact-details">
+                        <p><i class="fas fa-map-marker-alt"></i> Baakline</p>
+                        <p><i class="fas fa-phone"></i> +961 71 489 924</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/sushi_bell/?hl=en" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/sushi.bell.lb/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.tiktok.com/@sushi_bell_lb" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2025 Sushi Bell. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="JS/careers.js"></script>
+</body>
+</html>

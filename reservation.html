@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushi Bell - Reservations</title>
+    <link rel="stylesheet" href="CSS/reservation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="logo"><h2>Sushi Bell</h2></div>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+
+        <li class="dropdown">
+          <a href="about.html">About</a>
+          <ul class="dropdown-menu">
+            <li><a href="history.html">Our History</a></li>
+            <li><a href="team.html">The Team</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+          </ul>
+        </li>
+
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li><a href="loyalty.html">Loyalty</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="careers.html" class="order-btn">Join Us</a></li>
+      </ul>
+
+      <div class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <img src="imgs/sushi-bell-logo-print-1.jpeg" alt="sushi bell logo">
+          <div class="logo-text">
+            <h2>Reserve Your Table</h2>
+<p>An elevated dining experience awaits you</p>
+
+          </div>
+        </div>
+
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Baakline - Hamra - Aley</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+961 71 489 924</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+    <main class="reservation-page">
+        <section class="reservation-hero" style="background-image: url('images/sushi-kakkoii.jpeg'); background-position: center center; background-size: cover; background-repeat: no-repeat;">
+            <div class="container hero-content">
+                <div>
+                    <h1>Reserve Your Table</h1>
+                    <p>Experience fresh sushi, crafted to order in the heart of Lebanon. Reserve your seat for tonight or plan ahead for a special occasion.</p>
+                </div>
+                <div class="hero-badge">
+                    <span>Open Daily</span>
+                    <p>12:00 pm – 12:00 am</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="reservation-section">
+            <div class="container reservation-layout">
+                <div class="reservation-info">
+                    <h2>Dine With Sushi Bell</h2>
+                    <p>Whether it is date night, a birthday, or a casual sushi craving, book a table and we will keep everything ready for you.</p>
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <h3>Locations</h3>
+                            <p>Baakline Branch</p>
+                            <p>Hamra Branch</p>
+                            <p>Aley Branch</p>
+                        </div>
+                        <div class="info-card">
+                            <h3>Maximum Guests</h3>
+                            <p>Online reservations up to 10 guests. For larger groups, please contact us directly.</p>
+                        </div>
+                        <div class="info-card">
+                            <h3>Policies</h3>
+                            <p>We hold your table for 15 minutes. Please call if you are running late so we can do our best to accommodate you.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="reservation-form" id="reservationForm">
+                    <h2>Book Your Table</h2>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="form-field">
+                            <label for="guests">Number of Guests</label>
+                            <select id="guests" name="guests" required>
+                                <option value="">Select</option>
+                                <option value="1">1 guest</option>
+                                <option value="2">2 guests</option>
+                                <option value="3">3 guests</option>
+                                <option value="4">4 guests</option>
+                                <option value="5">5 guests</option>
+                                <option value="6">6 guests</option>
+                                <option value="7">7 guests</option>
+                                <option value="8">8 guests</option>
+                                <option value="9">9 guests</option>
+                                <option value="10">10 guests</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="time">Time</label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="occasion">Occasion</label>
+                            <select id="occasion" name="occasion">
+                                <option value="">Regular visit</option>
+                                <option value="birthday">Birthday</option>
+                                <option value="anniversary">Anniversary</option>
+                                <option value="business">Business Meeting</option>
+                                <option value="celebration">Celebration</option>
+                            </select>
+                        </div>
+                        <div class="form-field">
+                            <label>Seating Preference</label>
+                            <div class="seating-options">
+                                <label>
+                                    <input type="radio" name="seating" value="indoor" checked>
+                                    <span>Indoor</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="seating" value="outdoor">
+                                    <span>Outdoor</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="notes">Special Requests</label>
+                        <textarea id="notes" name="notes" rows="4" placeholder="Allergies, high chair, birthday cake, or anything special we should know."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary">Confirm Reservation</button>
+                    <p class="form-message" id="formMessage"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+     <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+    <div class="logo-image">
+        <img src="imgs/sushi-bell-logo-print-1.jpeg" alt="Sushi Bell Logo">
+    </div>
+    <div class="footer-logo-text">
+        <h3>Sushi Bell</h3>
+        <p>A world class taste in a high end place</p>
+    </div>
+</div>
+                    <div class="contact-details">
+                        <p><i class="fas fa-map-marker-alt"></i> Baakline</p>
+                        <p><i class="fas fa-phone"></i> +961 71 489 924</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/sushi_bell/?hl=en" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/sushi.bell.lb/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.tiktok.com/@sushi_bell_lb" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2025 Sushi Bell. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JS/reservation.js"></script>
+</body>
+</html>

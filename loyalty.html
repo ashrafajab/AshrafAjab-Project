@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sushi Bell - Loyalty</title>
+<link rel="stylesheet" href="CSS/loyalty.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="shortcut icon" href="images/favicon.png" type="image/.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+ <header class="site-header">
+    <nav class="navbar">
+      <div class="logo"><h2>Sushi Bell</h2></div>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="about.html">About</a>
+          <ul class="dropdown-menu">
+            <li><a href="history.html">Our History</a></li>
+            <li><a href="team.html">The Team</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+          </ul>
+        </li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li><a href="loyalty.html">Loyalty</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="careers.html" class="order-btn">Join Us</a></li>
+      </ul>
+
+      <div class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <img src="imgs/sushi-bell-logo-print-1.jpeg" alt="sushi bell logo">
+          <div class="logo-text">
+            <h2>Loyalty Program</h2>
+            <p>Earn more, enjoy more — rewards designed for true sushi lovers</p>
+          </div>
+        </div>
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Baakline - Hamra - Aley</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+961 71 489 924</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<section class="loyalty-hero" style="background-image: url(images/loyalty-hero.jpeg);">
+    <div class="container hero-content">
+        <div class="hero-text">
+            <h1>Welcome to Sushi Bell Circle</h1>
+            <p>Turn your love for sushi into rewards! Earn points, unlock perks, and enjoy exclusive experiences.</p>
+            <a href="#joinForm" class="btn">Join Now</a>
+        </div>
+    </div>
+</section>
+
+<!-- Digital Loyalty Card -->
+<section class="loyalty-card-section">
+    <div class="container">
+        <h2>Your Digital Loyalty Card</h2>
+        <div class="loyalty-card-container">
+            <div class="loyalty-card" id="loyaltyCard">
+                <div class="card-header">
+                    <div class="card-logo">
+                        <i class="fas fa-crown"></i>
+                        <span>Sushi Bell Circle</span>
+                    </div>
+                    <div class="card-tier" id="currentTier">Bronze</div>
+                </div>
+                <div class="card-body">
+                    <div class="member-info">
+                        <div class="member-avatar" id="memberAvatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="member-details">
+                            <h3 id="memberName">Guest Member</h3>
+                            <p class="member-id" id="memberID">ID: ---</p>
+                        </div>
+                    </div>
+                    <div class="points-display">
+                        <div class="points-circle">
+                            <svg width="120" height="120" id="pointsCircle">
+                                <circle cx="60" cy="60" r="54" fill="none" stroke="#444" stroke-width="8"/>
+                                <circle cx="60" cy="60" r="54" fill="none" stroke="var(--accent-color)" 
+                                        stroke-width="8" stroke-linecap="round" id="pointsProgress"/>
+                            </svg>
+                            <div class="points-text">
+                                <span id="currentPoints">0</span>
+                                <small>POINTS</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-stats">
+                        <div class="stat">
+                            <span class="stat-value" id="visitsCount">0</span>
+                            <span class="stat-label">Visits</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value" id="nextReward">150</span>
+                            <span class="stat-label">To Next Reward</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value" id="sinceDate">---</span>
+                            <span class="stat-label">Member Since</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button class="btn-small" id="addPointsBtn">
+                        <i class="fas fa-plus"></i> Add Visit
+                    </button>
+                    <button class="btn-small" id="redeemBtn">
+                        <i class="fas fa-gift"></i> Redeem
+                    </button>
+                </div>
+            </div>
+            
+            <div class="points-actions">
+                <h3>Quick Points</h3>
+                <div class="action-buttons">
+                    <button class="action-btn" data-points="50">
+                        <i class="fas fa-utensils"></i>
+                        <span>Lunch</span>
+                        <small>+50 pts</small>
+                    </button>
+                    <button class="action-btn" data-points="80">
+                        <i class="fas fa-moon"></i>
+                        <span>Dinner</span>
+                        <small>+80 pts</small>
+                    </button>
+                    <button class="action-btn" data-points="100">
+                        <i class="fas fa-users"></i>
+                        <span>Group Visit</span>
+                        <small>+100 pts</small>
+                    </button>
+                    <button class="action-btn" data-points="150">
+                        <i class="fas fa-birthday-cake"></i>
+                        <span>Birthday</span>
+                        <small>+150 pts</small>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="loyalty-steps">
+    <div class="container">
+        <h2>How It Works</h2>
+        <div class="steps-grid">
+            <div class="step-card">
+                <div class="step-number">1</div>
+                <h3>Sign Up</h3>
+                <p>Create your Sushi Bell profile to start earning points.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">2</div>
+                <h3>Earn Points</h3>
+                <p>Get points every time you dine or order online.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">3</div>
+                <h3>Redeem Rewards</h3>
+                <p>Use points for rolls, platters, desserts, and exclusive perks.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Tier Progress Bar -->
+<section class="tier-progression">
+    <div class="container">
+        <h2>Your Tier Progress</h2>
+        <div class="progress-container">
+            <div class="tier-labels">
+                <span class="tier-label active" data-tier="bronze">Bronze</span>
+                <span class="tier-label" data-tier="silver">Silver</span>
+                <span class="tier-label" data-tier="gold">Gold</span>
+                <span class="tier-label" data-tier="platinum">Platinum</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="tierProgress" style="width: 0%"></div>
+                <div class="tier-marker" style="left: 0%" data-tier="bronze">
+                    <div class="marker-dot"></div>
+                    <span>0 pts</span>
+                </div>
+                <div class="tier-marker" style="left: 33%" data-tier="silver">
+                    <div class="marker-dot"></div>
+                    <span>500 pts</span>
+                </div>
+                <div class="tier-marker" style="left: 66%" data-tier="gold">
+                    <div class="marker-dot"></div>
+                    <span>1000 pts</span>
+                </div>
+                <div class="tier-marker" style="left: 100%" data-tier="platinum">
+                    <div class="marker-dot"></div>
+                    <span>2000 pts</span>
+                </div>
+            </div>
+        </div>
+        <div class="tier-benefits" id="tierBenefits">
+            <h3>Current Tier Benefits</h3>
+            <ul id="benefitsList">
+                <li><i class="fas fa-check-circle"></i> Welcome reward</li>
+                <li><i class="fas fa-check-circle"></i> Exclusive updates</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="loyalty-form-section" id="joinForm">
+    <div class="container">
+        <h2>Join Sushi Bell Circle</h2>
+        <form class="loyalty-form" id="loyaltyForm">
+            <div class="form-row">
+                <input type="text" placeholder="Full Name" id="fullName" required>
+                <input type="tel" placeholder="Phone Number" id="phoneNumber" required>
+            </div>
+            <div class="form-row">
+                <input type="email" placeholder="Email" id="email">
+                <select id="preferredBranch" required>
+                    <option value="">Preferred Branch</option>
+                    <option value="baakline">Baakline</option>
+                    <option value="beirut">Hamra</option>
+                    <option value="aley">Aley</option>
+                    <option value="all">All</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <input type="date" placeholder="Birthday" id="birthday">
+                <div class="contact-options">
+                    <label><input type="checkbox" name="contact" value="sms"> SMS</label>
+                    <label><input type="checkbox" name="contact" value="whatsapp"> WhatsApp</label>
+                    <label><input type="checkbox" name="contact" value="email"> Email</label>
+                </div>
+            </div>
+            <textarea placeholder="Favorite Sushi or Notes" id="favoriteSushi"></textarea>
+            <button type="submit" class="btn">Create My Profile</button>
+        </form>
+    </div>
+</section>
+
+<section class="loyalty-tiers">
+    <div class="container">
+        <h2>Membership Tiers</h2>
+        <div class="tiers-grid">
+            <div class="tier-card bronze" data-tier="bronze">
+                <div class="tier-icon"><i class="fas fa-star"></i></div>
+                <h3>Bronze</h3>
+                <p class="tier-points">0-499 points</p>
+                <ul>
+                    <li>Welcome reward (Free appetizer)</li>
+                    <li>Exclusive email updates</li>
+                    <li>Birthday treat</li>
+                </ul>
+            </div>
+            <div class="tier-card silver" data-tier="silver">
+                <div class="tier-icon"><i class="fas fa-gem"></i></div>
+                <h3>Silver</h3>
+                <p class="tier-points">500-999 points</p>
+                <ul>
+                    <li>Priority reservations</li>
+                    <li>Double points on weekends</li>
+                    <li>Free drink with order</li>
+                </ul>
+            </div>
+            <div class="tier-card gold" data-tier="gold">
+                <div class="tier-icon"><i class="fas fa-crown"></i></div>
+                <h3>Gold</h3>
+                <p class="tier-points">1000-1999 points</p>
+                <ul>
+                    <li>Birthday platter</li>
+                    <li>Early access to new menus</li>
+                    <li>Monthly surprise gift</li>
+                </ul>
+            </div>
+            <div class="tier-card platinum" data-tier="platinum">
+                <div class="tier-icon"><i class="fas fa-trophy"></i></div>
+                <h3>Platinum</h3>
+                <p class="tier-points">2000+ points</p>
+                <ul>
+                    <li>VIP chef's table experience</li>
+                    <li>Unlimited priority seating</li>
+                    <li>Annual gourmet dinner</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Rewards Popup (Hidden until triggered) -->
+<div class="rewards-popup" id="rewardsPopup">
+    <div class="popup-content">
+        <h3><i class="fas fa-gift"></i> Available Rewards</h3>
+        <div class="rewards-grid">
+            <div class="reward-item" data-cost="150">
+                <div class="reward-icon"><i class="fas fa-ice-cream"></i></div>
+                <h4>Free Dessert</h4>
+                <p>Choose from our premium desserts</p>
+                <div class="reward-cost">150 points</div>
+                <button class="claim-btn">Claim</button>
+            </div>
+            <div class="reward-item" data-cost="300">
+                <div class="reward-icon"><i class="fas fa-fish"></i></div>
+                <h4>Signature Roll</h4>
+                <p>Get our chef's special roll</p>
+                <div class="reward-cost">300 points</div>
+                <button class="claim-btn">Claim</button>
+            </div>
+            <div class="reward-item" data-cost="500">
+                <div class="reward-icon"><i class="fas fa-glass-cheers"></i></div>
+                <h4>Wine Pairing</h4>
+                <p>Premium wine with your meal</p>
+                <div class="reward-cost">500 points</div>
+                <button class="claim-btn">Claim</button>
+            </div>
+        </div>
+        <button class="close-popup" id="closePopup"><i class="fas fa-times"></i></button>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-info">
+                <div class="footer-logo">
+                    <div class="logo-image">
+                        <img src="imgs/sushi-bell-logo-print-1.jpeg" alt="Sushi Bell Logo">
+                    </div>
+                    <div class="footer-logo-text">
+                        <h3>Sushi Bell</h3>
+                        <p>A world class taste in a high end place</p>
+                    </div>
+                </div>
+                <div class="contact-details">
+                    <p><i class="fas fa-map-marker-alt"></i> Baakline</p>
+                    <p><i class="fas fa-phone"></i> +961 71 489 924</p>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 Sushi Bell. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="JS/loyalty.js"></script>
+</body>
+</html>

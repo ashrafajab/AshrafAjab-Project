@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushi Bell Gallery - A world class taste in a high end place</title>
+    <link rel="stylesheet" href="CSS/gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="imgs/sushifavicon.jpeg" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="logo"><h2>Sushi Bell</h2></div>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+
+        <li class="dropdown">
+          <a href="about.html">About</a>
+          <ul class="dropdown-menu">
+            <li><a href="history.html">Our History</a></li>
+            <li><a href="team.html">The Team</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+          </ul>
+        </li>
+
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li><a href="loyalty.html">Loyalty</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="careers.html" class="order-btn">Join Us</a></li>
+      </ul>
+
+      <div class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <img src="imgs/sushi-bell-logo-print-1.jpeg" alt="sushi bell logo">
+          <div class="logo-text">
+            <h2>Gallery</h2>
+<p>A visual taste of our food, ambience, and craft</p>
+
+          </div>
+        </div>
+
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Baakline - Hamra - Aley</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+961 71 489 924</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Gallery</h2>
+                <p>Take a visual journey through our exquisite dishes and restaurant ambiance</p>
+            </div>
+
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="sushi">Sushi</button>
+                <button class="filter-btn" data-filter="appetizers">Appetizers</button>
+                <button class="filter-btn" data-filter="main-course">Main Course</button>
+                <button class="filter-btn" data-filter="restaurant">Restaurant</button>
+            </div>
+
+            <div class="gallery-grid" id="gallery-grid">
+                <!-- Gallery items will be populated by JavaScript -->
+                <div class="gallery-item" data-category="sushi">
+                    <img src="imgs/gallery.sushi2.jpeg" alt="Diversity Sushi">
+                    <div class="gallery-overlay">
+                        <h3>Green Mountain</h3>
+                        <p> layers of salmon , crab, avocado and rice</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="sushi">
+                    <img src="imgs/gellery.sushi.jpeg" alt="Premium Set">
+                    <div class="gallery-overlay">
+                        <h3>Premium Set</h3>
+                        <p>Our signature premium sushi collection</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="appetizers">
+                    <img src="imgs/gallery.dumplings.jpg" alt="Shrimp Dumplings">
+                    <div class="gallery-overlay">
+                        <h3>Shrimp Dumplings</h3>
+                        <p>Delicate shrimp filled dumplings</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="main-course">
+                    <img src="imgs/gallery.maincourse.jpeg" alt="Grilled Salmon">
+                    <div class="gallery-overlay">
+                        <h3>Grilled Salmon</h3>
+                        <p>200g grilled salmon with special sauce</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="main-course">
+                    <img src="imgs/gallery.maincourse2.jpeg" alt="Mongolian beef">
+                    <div class="gallery-overlay">
+                        <h3>Mongolian beef</h3>
+                        <p>Sauteed beef pieces basted in a special sweet sauce,paired with scallions and served with steamed rice</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="restaurant">
+                    <img src="imgs/galley.resto.jpeg" alt="Restaurant Interior">
+                    <div class="gallery-overlay">
+                        <h3>Restaurant Interior</h3>
+                        <p>Our elegant dining space</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="sushi">
+                    <img src="imgs/gallery.c4.jpeg" alt="C-4">
+                    <div class="gallery-overlay">
+                        <h3>C-4</h3>
+                        <p>Our famous Sushi Roll</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="appetizers">
+                    <img src="imgs/gallery.dyshrimps.jpeg" alt="Dynamite Shrimps">
+                    <div class="gallery-overlay">
+                        <h3>Dynamite Shrimps</h3>
+                        <p>Spicy dynamite shrimp appetizer</p>
+                    </div>
+                </div>
+                
+                
+                <div class="gallery-item" data-category="restaurant">
+                    <img src="imgs/gallery.resto2.jpeg" alt="Dining Area">
+                    <div class="gallery-overlay">
+                        <h3>Dining Area</h3>
+                        <p>Comfortable and stylish seating</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close">&times;</button>
+            <button class="lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="lightbox-next"><i class="fas fa-chevron-right"></i></button>
+            <img src="" alt="" class="lightbox-image">
+            <div class="lightbox-caption">
+                <h3></h3>
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+    <div class="logo-image">
+        <img src="imgs/sushi-bell-logo-print-1.jpeg" alt="Sushi Bell Logo">
+    </div>
+    <div class="footer-logo-text">
+        <h3>Sushi Bell</h3>
+        <p>A world class taste in a high end place</p>
+    </div>
+</div>
+                    <div class="contact-details">
+                        <p><i class="fas fa-map-marker-alt"></i> Baakline</p>
+                        <p><i class="fas fa-phone"></i> +961 71 489 924</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/sushi_bell/?hl=en" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/sushi.bell.lb/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.tiktok.com/@sushi_bell_lb" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2025 Sushi Bell. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JS/gallery.js"></script>
+</body>
+</html>

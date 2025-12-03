@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushi Bell - A world class taste in a high end place</title>
+    <link rel="stylesheet" href="CSS/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="imgs/sushi-bell-logo-print-1.jpeg" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    
+
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="logo"><h2>Sushi Bell</h2></div>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+
+        <li class="dropdown">
+          <a href="about.html">About</a>
+          <ul class="dropdown-menu">
+            <li><a href="history.html">Our History</a></li>
+            <li><a href="team.html">The Team</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+          </ul>
+        </li>
+
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+        <li><a href="loyalty.html">Loyalty</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="careers.html" class="order-btn">Join Us</a></li>
+      </ul>
+
+      <div class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+
+  
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <img src="imgs/sushi-bell-logo-print-1.jpeg" alt="sushi bell logo">
+          <div class="logo-text">
+            <h1>Our Menu</h1>
+            <p>A world class taste in a high end place</p>
+          </div>
+        </div>
+
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Baakline - Hamra - Aley</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+961 71 489 924</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+    
+    <section class="hero" style="background-image: url(imgs/gallery.sushi4.jpeg);">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h2>Experience Authentic Japanese Cuisine</h2>
+                <p>Fresh ingredients, traditional recipes, and modern flair</p>
+            </div>
+        </div>
+    </section>
+
+  
+    <section class="menu-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Japan On Your Plate</h2>
+                <div class="category-filter">
+                    <button class="filter-btn active" data-category="all">All Categories</button>
+                </div>
+            </div>
+
+            <div class="menu-content">
+                <div class="menu-items" id="menu-items">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Order</h3>
+            <button class="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+        </div>
+        
+       <div class="order-type-section">
+    <h4>Order Type</h4>
+    <div class="order-type-options">
+        <label class="order-type-option">
+            <input type="radio" name="orderType" value="delivery" checked>
+            <span class="radio-custom"></span>
+            <span class="order-type-text">
+                <i class="fas fa-motorcycle"></i>
+                Delivery
+            </span>
+        </label>
+        <label class="order-type-option">
+            <input type="radio" name="orderType" value="takeaway">
+            <span class="radio-custom"></span>
+            <span class="order-type-text">
+                <i class="fas fa-utensils"></i>
+                Takeaway
+            </span>
+        </label>
+    </div>
+    
+    
+    <div class="delivery-section" id="delivery-section">
+        <div class="form-group">
+            <label for="delivery-phone">Phone Number *</label>
+            <input type="tel" id="delivery-phone" placeholder="Enter your phone number">
+        </div>
+        <div class="form-group">
+            <label for="delivery-address">Delivery Address *</label>
+            <textarea 
+                id="delivery-address" 
+                placeholder="Enter your full delivery address..."
+                rows="3"
+            ></textarea>
+        </div>
+    </div>
+    
+    
+    <div class="takeaway-section hidden" id="takeaway-section">
+        <div class="form-group">
+            <label for="takeaway-phone">Phone Number *</label>
+            <input type="tel" id="takeaway-phone" placeholder="Enter your phone number">
+        </div>
+        <div class="form-group">
+            <label for="takeaway-branch">Pickup Branch *</label>
+            <select id="takeaway-branch" class="location-select">
+                <option value="">Select pickup branch</option>
+                <option value="baakline">Baakline Branch</option>
+                <option value="hamra">Hamra Branch</option>
+                <option value="aley">Aley Branch</option>
+            </select>
+        </div>
+    </div>
+</div>
+        
+        <div class="cart-total">
+            <div class="total-line">
+                <span>Subtotal:</span>
+                <span class="subtotal">$0.00</span>
+            </div>
+            
+            <div class="total-line">
+                <span>Delivery Fee:</span>
+                <span class="delivery-fee">$0.00</span>
+            </div>
+            <div class="total-line grand-total">
+                <span>Total:</span>
+                <span class="total">$0.00</span>
+            </div>
+            <button class="checkout-btn">Place Order</button>
+        </div>
+    </div>
+    
+    <div class="cart-overlay"></div>
+
+    
+    <div class="cart-button">
+        <span>🛒</span>
+        <span class="cart-count">0</span>
+    </div>
+
+   
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <div class="logo-image">
+                            <img src="imgs/sushi-bell-logo-print-1.jpeg" alt="Sushi Bell Logo">
+                        </div>
+                        <div class="footer-logo-text">
+                            <h3>Sushi Bell</h3>
+                            <p>A world class taste in a high end place</p>
+                        </div>
+                    </div>
+                    <div class="contact-details">
+                        <p><i class="fas fa-map-marker-alt"></i> Baakline</p>
+                        <p><i class="fas fa-phone"></i> +961 71 489 924</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/sushi_bell/?hl=en" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/sushi.bell.lb/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.tiktok.com/@sushi_bell_lb" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2025 Sushi Bell. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JS/menu.js"></script>
+</body>
+</html>
